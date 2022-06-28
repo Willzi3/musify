@@ -10,12 +10,11 @@
 #Landing{
     height: 100vh;
     display: flex;
-    background-color: black;
     justify-content: center;
     align-items: center;
 
 }
-.circle {
+/* .circle {
     position: relative;
     display: block;
     margin: auto;
@@ -36,11 +35,11 @@
     top: 45%;
     border-style: none;
     background-color: transparent;
-  }
+  } */
 
   /* Search Section */
   #Listing{
-    height: 100vh;
+    height: 60vh;
   }
 
   .row .col {
@@ -50,15 +49,20 @@
   }
 
   .container {
-    height: 80vh;
+    height: 60vh;
     border: 1px solid black;
     margin: 20px;
+    
+  }
+
+  .container h1 {
+    font-size: 2.5rem;
   }
 
   .popular{
     border: 1px solid black;
-    width: 250px;
-    height: 250px;
+    width: 160px;
+    height: 160px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -70,6 +74,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+    padding: 10px;
   }
 
   .artistImage{
@@ -78,8 +84,35 @@
     margin: 5px;
   }
 
-  #Catergories{
-    height: 80vh;
+  #Search .container{
     border: 1px solid black;
-    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+  }
+  .form{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .form-item{
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+  }
+  .form-group{
+    height: 30px;
+  }
+
+  .form-group1{
+    height: 30px;
+    width: 150px;
+  }
+
+  #btn{
+    height: 30px;
+    width: 100px;
+    margin-top: 21px;
   }

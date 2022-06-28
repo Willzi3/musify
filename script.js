@@ -168,13 +168,3 @@ for(i = 0; i < musicData.length; i++){
     }
 }
 
-let sort = musicData.filter((value, index, arr) => {
-    for(i = 0; i < musicData.length; i++){
-        if(musicData[i].catergory){
-            document.getElementById("output1").innerHTML += `
-            <div class="popular"> ${musicData[i].catergory}</div>`
-        }
-    }
-    
-})
-console.log(sort);
