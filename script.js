@@ -177,11 +177,21 @@ for(i = 0; i < musicData.length; i++){
     }
 }
 //pop up that asks for username & password
-// function popUp(){
-//     var userAdjective = prompt(`<input type="text">
-//     <input type="text">`);
-//     alert (userAdjective);
-// }
+function popUp(){
+    let userName = document.getElementById("output2").innerHTML = `
+    <form class="userInput">
+    <label>User Name:</label>
+    <input type="text" id="userName" required>
+    <label>Password:</label>
+    <input type="text" id="password" required>
+    <button type="button">Submit</button>
+    </form>`
+    for(i = 0; i < userInfo.length; i++){
+        if(userName === userInfo[i].userName){
+            console.log("userName is Valid")
+        }
+    }
+}
 
 //Search Bar
 

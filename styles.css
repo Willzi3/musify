@@ -5,6 +5,8 @@
 }
 /*Landing*/
 #Landing{
+  background-image: url(./images/background.png);
+  background-size: cover;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -94,7 +96,7 @@
 
   #SearchBtn{
     margin: 5px;
-    margin-right: 100px;
+    margin-right: 20px;
   }
 
   .nav{
@@ -107,6 +109,7 @@
   .nav-item{
     border: 1px solid black;
     margin: 1px;
+    padding: 2px;
   }
   .output3{
     border: 1px solid black;
@@ -132,14 +135,14 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: lightslategray;
+    background-color: black;
   }
   .footer2{
     height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightslategray;
+    background-color: black;
   }
   .list{
     display: flex;
@@ -172,6 +175,9 @@
     margin-top: 10px;
     flex-direction: column;
   }
+  #searchBar{
+    padding: 2px;
+  }
   .bar-item{
     display: flex;
   }
@@ -183,5 +189,22 @@
   }
   .Ratings{
     border: 1px solid black;
+  }
+
+  .userInput{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+  }
+  .userInput input{
+    width: 200px;
+  }
+
+  .userInput button {
+    width: 200px;
+    margin: 10px;
   }
   
