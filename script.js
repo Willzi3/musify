@@ -200,7 +200,7 @@ function function1() {
     if(rating === getRating){
         // document.getElementById("output2").innerHTML = `
         // <div class="output3">${data.title} ${data.artistName}</div>`
-        console.log(data.title)
+        console.log()
     }
 //    document.getElementById("output2").innerHTML = `
 //    <div class="output3"><h1>Result</h1>${getRating.title}- ${getRating.artistName} <li>${getRating.rating}</li></div>`
