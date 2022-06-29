@@ -17,11 +17,17 @@
     <div class="nav">
       <div class="nav-item">
         <label for="catergory">Catergory</label>
-      <select name="catergory" id="catergory" class="select"></select>
+      <select name="catergory" id="cat" onclick="catergory()">
+        <option value="Popular Music" class="option">Popular</option>
+        <option value="Rock" class="option">Rock</option>
+        <option value="Pop" class="option">Pop</option>
+      </select>
       </div>
       <div class="nav-item">
+        <!-- <button type="button" id="selectBtn">Select</button> -->
+        <!-- <h1 id="result">Result</h1> -->
         <label for="rating">Rating</label>
-      <select name="rating" id="rating" class="select">
+      <select name="rating" id="rating" onclick="selected()">
         <option value="5" class="option">5</option>
         <option value="6" class="option">6</option>
         <option value="7" class="option">7</option>

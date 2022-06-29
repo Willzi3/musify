@@ -193,19 +193,34 @@ function myFunction() {
    <div class="output3"><h1>Result</h1>${data.title}- ${data.artistName} <li>${data.rating}</li></div>`
        
     }
-document.getElementById("option").addEventListener("select", function1);
-function function1() {
-    let rating = document.getElementById("option").value;
-    let getRating = musicData.find( data => data.rating === rating);
-    if(rating === getRating){
-        // document.getElementById("output2").innerHTML = `
-        // <div class="output3">${data.title} ${data.artistName}</div>`
-        console.log()
+    
+//eventlistener for select
+
+// console.log(select)
+
+function selected(){
+    let select = document.getElementById("rating").value;
+    // document.getElementById("output2").innerHTML = select
+    for(i = 0; i < musicData.length; i++){
+        if(select === musicData[i].rating){
+            document.getElementById("output2").innerHTML += `
+            <div class="Ratings">${musicData[i].title}</div>`
+        }
     }
-//    document.getElementById("output2").innerHTML = `
-//    <div class="output3"><h1>Result</h1>${getRating.title}- ${getRating.artistName} <li>${getRating.rating}</li></div>`
-       
+
+}
+
+function catergory(){
+    let catergory = document.getElementById("cat").value;
+    // console.log(catergory)
+    for(i = 0; i < musicData.length; i++){
+        if(catergory === musicData[i].catergory){
+            document.getElementById("output2").innerHTML += `
+            <div class="catergory">${musicData[i].title}</div>`
+        }
     }
+}
+
     
 
    
