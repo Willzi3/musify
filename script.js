@@ -214,7 +214,7 @@ function selected(){
     for(i = 0; i < musicData.length; i++){
         if(select === musicData[i].rating){
             document.getElementById("output2").innerHTML += `
-            <div class="Ratings">${musicData[i].title}</div>`
+            <div class="Ratings"><li>${musicData[i].title}</li><li>${musicData[i].artistName}</li><li>${musicData[i].rating}</li></div>`
         }
     }
 

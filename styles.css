@@ -189,6 +189,16 @@
   }
   .Ratings{
     border: 1px solid black;
+    width: 310px;
+    margin: 10px;
+    display: flex;
+
+  }
+  .Ratings li{
+    border: 1px solid black;
+    list-style: none;
+    margin: 2px;
+    width: 100px;
   }
 
   .userInput{
