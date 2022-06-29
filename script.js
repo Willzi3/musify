@@ -150,7 +150,16 @@ const musicData = [
          
     },
 ]
-
+const userInfo = [
+    {
+        userName: "Zachary",
+        password: "L13@Nardo01"
+    },
+    {
+        userName: "Lecturer",
+        password: "LifeChoices!2022"
+    }
+]
 //LocalStorage
 let myObject = JSON.stringify(musicData);
 
@@ -167,4 +176,44 @@ for(i = 0; i < musicData.length; i++){
         <div class="popular"> ${musicData[i].title}<br>${musicData[i].artistName} ${musicData[i].rating} </div>`
     }
 }
+//pop up that asks for username & password
+// function popUp(){
+//     var userAdjective = prompt(`<input type="text">
+//     <input type="text">`);
+//     alert (userAdjective);
+// }
 
+//Search Bar
+
+document.getElementById("SearchBtn").addEventListener("click", myFunction);
+function myFunction() {
+    let title = document.getElementById("searchBar").value;
+    let data = musicData.find( data => data.title === title);
+   document.getElementById("output2").innerHTML = `
+   <div class="output3"><h1>Result</h1>${data.title}- ${data.artistName} <li>${data.rating}</li></div>`
+       
+    }
+document.getElementById("option").addEventListener("select", function1);
+function function1() {
+    let rating = document.getElementById("option").value;
+    let getRating = musicData.find( data => data.rating === rating);
+    if(rating === getRating){
+        // document.getElementById("output2").innerHTML = `
+        // <div class="output3">${data.title} ${data.artistName}</div>`
+        console.log(data.title)
+    }
+//    document.getElementById("output2").innerHTML = `
+//    <div class="output3"><h1>Result</h1>${getRating.title}- ${getRating.artistName} <li>${getRating.rating}</li></div>`
+       
+    }
+    
+
+   
+// function display() {
+//     if(title === musicData[i].title){
+//         document.getElementById("SearchBar").innerHTML = hello
+//     }
+//   }
+
+
+  

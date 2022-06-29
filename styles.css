@@ -3,9 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-
-/*navigation*/
 /*Landing*/
 #Landing{
     height: 100vh;
@@ -14,32 +11,13 @@
     align-items: center;
 
 }
-/* .circle {
-    position: relative;
-    display: block;
-    margin: auto;
-    width: 300px;
-    height: 300px;
-    background: red;
-    border-radius: 50%;
-    background: -webkit-radial-gradient(100px 100px, circle, red, #000);
-  }
-  .circle:hover {
-    background: white;
-    cursor: pointer;
-  }
-
-  .circle button {
-    position: absolute;
-    left: 45%;
-    top: 45%;
-    border-style: none;
-    background-color: transparent;
-  } */
-
   /* Search Section */
   #Listing{
     height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
   }
 
   .row .col {
@@ -78,12 +56,6 @@
     padding: 10px;
   }
 
-  .artistImage{
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-  }
-
   #Search .container{
     border: 1px solid black;
     display: flex;
@@ -115,4 +87,61 @@
     height: 30px;
     width: 100px;
     margin-top: 21px;
+  }
+
+  #SearchBtn{
+    margin: 5px;
+    margin-right: 100px;
+  }
+
+  .nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+  }
+
+  .nav-item{
+    border: 1px solid black;
+    margin: 1px;
+  }
+  .output3{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 10px 10px lightblue;
+    border-style: none;
+  }
+  .output3 li{
+    background-color: black;
+    width: 20px;
+    color: white;
+    list-style: none;
+    text-align: center;
+  }
+  .output3 h3{
+    font-size: 1rem;
+  }
+  .footer{
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-inline: 100px;
+  }
+  .list{
+    display: flex;
+    justify-content: center;
+  }
+  ul li {
+    border: 1px solid black;
+    width: 100px;
+    list-style: none;
+  }
+
+  #list-container{
+    border: 1px solid black;
+    margin: 1px;
   }
