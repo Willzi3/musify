@@ -66,15 +66,20 @@ i:hover {
     gap: 10px;
     /* box-shadow: 5px 20px 60px 10px blueviolet; */
     border-radius: 10px;
-    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    text-align: center;
   }
   .popular:hover{
-    /* background-color: blueviolet; */
+  color: white;
+  background-color: purple;
     /* box-shadow: 5px 20px 60px 10px red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
   #output{
     display: flex;
@@ -239,17 +244,18 @@ i:hover {
     color: white;
   }
   .Ratings{
-    border: 1px solid black;
-    width: 310px;
+    width: 500px;
     margin: 10px;
     display: flex;
 
   }
   .Ratings li{
     border: 1px solid black;
+    border-radius: 5px;
     list-style: none;
     margin: 2px;
-    width: 100px;
+    width: 150px;
+    text-align: center;
   }
 
   .userInput{
@@ -367,4 +373,55 @@ i:hover {
   #table td {
     width: 150px;
     border: 1px solid black;
+  }
+
+  .catergory{
+    display: flex;
+    gap: 5px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+  .catergory li {
+    list-style: none;
+    border: 1px solid black;
+    width: 150px;
+    border-radius: 5px;
+  }
+
+  /* .cat-container{
+    border: 1px solid black;
+  } */
+
+  #output2{
+    margin-inline: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 30px 40px 20px;
+    padding: 10px;
+  }
+
+  #outpute3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 50px;
+    border-radius: 10px;
+    box-shadow: 10px 30px 40px 20px;
+    padding: 10px;
+  }
+
+  @media  (max-width: 891px){
+    /* #Listing{
+      height: 50vh;
+    } */
+    .popular{
+      width: 120px;
+      height: 120px;
+    }
   }

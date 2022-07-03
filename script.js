@@ -2,7 +2,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "1",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=1",
         artistName:"Jack Harlow",
         title:"First Class",
         rating:"8",
@@ -11,7 +11,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "2",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=2",
         artistName:"Dua Lipa",
         title:"Sweetest Pie",
         rating:"7",
@@ -20,7 +20,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "3",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=3",
         artistName:"Charlie Puth",
         title:"Light Switch",
         rating:"8",
@@ -29,7 +29,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "4",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=4",
         artistName:"Justin Bieber",
         title:"Attention",
         rating:"8",
@@ -38,7 +38,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "5",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=5",
         artistName:"Cardi B",
         title:"Shake it",
         rating:"8",
@@ -47,7 +47,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "6",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=6",
         artistName:"Shawn Menes",
         title:"When you're Gone",
         rating:"8",
@@ -56,7 +56,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "7",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=7",
         artistName:"Harry Styles",
         title:"Late Night Talking",
         rating:"8",
@@ -65,7 +65,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "8",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=8",
         artistName:"Megan Thee Stallion",
         title:"Plan B",
         rating:"8",
@@ -74,7 +74,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "9",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=9",
         artistName:"Pusha T",
         title:"Diet Coke",
         rating:"8",
@@ -83,7 +83,7 @@ const musicData = [
     {
         catergory: "Popular Music",
         id: "10",
-        image:"https://guardian.ng/wp-content/uploads/2022/04/JackHarlow2-1-1536x1024.jpeg",
+        image: "https://picsum.photos/200/300?random=10",
         artistName:"OneRepublic",
         title:"West Coast",
         rating:"8",
@@ -92,6 +92,7 @@ const musicData = [
     {
         catergory:"Rock",
        id: "11",
+       image: "https://picsum.photos/200/300?random=11",
        artistName:"Deep Purple",
         title:"Smoke on the water",
         rating:"8",
@@ -100,6 +101,7 @@ const musicData = [
     {
         catergory:"Rock",
         id: "12",
+        image: "https://picsum.photos/200/300?random=12",
         artistName:"Pink Floyd",
         title:"Comfortably Numb",
         rating:"8",
@@ -108,6 +110,7 @@ const musicData = [
     {
         catergory:"Rock",
         id: "13",
+        image: "https://picsum.photos/200/300?random=13",
         artistName:"Led Zeppelin",
         title:"Whole lotta love",
         rating:"8",
@@ -116,6 +119,7 @@ const musicData = [
     {
         catergory:"Rock",
          id: "14",
+         image: "https://picsum.photos/200/300?random=14",
          artistName:"Pink Floyd",
         title:"Another brick in the wall",
         rating:"8",
@@ -124,6 +128,7 @@ const musicData = [
     {
         catergory:"Rock",
         id: "15",
+        image: "https://picsum.photos/200/300?random=15",
         artistName:"Jimi Hendrix",
         title:"Purple Haze",
         rating:"8",
@@ -132,6 +137,7 @@ const musicData = [
     {
         catergory:"Pop",
         id: "16",
+        image: "https://picsum.photos/200/300?random=16",
         atistName:"Justin Bieber",
         title:"Stay",
         rating:"8",
@@ -140,6 +146,7 @@ const musicData = [
     {
         catergory:"Pop",
         id: "17",
+        image: "https://picsum.photos/200/300?random=17",
         atistName:"Camila Cabello",
         title:"Bam Bam",
         rating:"8",
@@ -148,6 +155,7 @@ const musicData = [
     {
         catergory:"Pop",
         id: "18",
+        image: "https://picsum.photos/200/300?random=18",
         artistName:"Elton John",
         title:"Cold Heart",
         rating:"8",
@@ -156,6 +164,7 @@ const musicData = [
     {
         catergory:"Pop",
         id: "19",
+        image: "https://picsum.photos/200/300?random=19",
         artistName:"Ed Sheeran",
         title:"Peru",
         rating:"8",
@@ -164,6 +173,7 @@ const musicData = [
     {
         catergory:"Pop",
         id: "20",
+        image: "https://picsum.photos/200/300?random=20",
         artistName:"Lil Nas",
         title:"That's what i want",
         rating:"8",
@@ -203,23 +213,6 @@ function searchFunc(){
     document.getElementById("output").innerHTML = `
     <div class="artistInfo">${data.artistName}<img class="img" src="${data.image}"><a href="${data.title}"link</a></div>`
 }
-//pop up that asks for username & password
-function popUp(){
-    let userName = document.getElementById("output2").innerHTML = `
-    <form class="userInput">
-    <label>User Name:</label>
-    <input type="text" id="userName" required>
-    <label>Password:</label>
-    <input type="text" id="password" required>
-    <button type="button">Submit</button>
-    </form>`
-    for(i = 0; i < userInfo.length; i++){
-        if(userName === userInfo[i].userName){
-            console.log("userName is Valid")
-        }
-    }
-}
-
 //Search Bar
 
 document.getElementById("SearchBtn").addEventListener("click", myFunction);
@@ -240,7 +233,7 @@ function selected(){
     // document.getElementById("output2").innerHTML = select
     for(i = 0; i < musicData.length; i++){
         if(select === musicData[i].rating){
-            document.getElementById("output").innerHTML += `
+            document.getElementById("outpute3").innerHTML += `
             <div class="Ratings"><li>${musicData[i].title}</li><li>${musicData[i].artistName}</li><li>${musicData[i].rating}</li></div>`
         }
     }
@@ -252,19 +245,11 @@ function catergory(){
     // console.log(catergory)
     for(i = 0; i < musicData.length; i++){
         if(catergory === musicData[i].catergory){
-            document.getElementById("output").innerHTML += `
-            <div class="catergory">${musicData[i].title}</div>`
+            document.getElementById("output2").innerHTML += `
+           <div class="cat-container">
+           <div class="catergory"><li>${musicData[i].title}</li><li>${musicData[i].artistName}</li><li>${musicData[i].rating}</li></div></div>`
         }
     }
 }
-    
-
-   
-// function display() {
-//     if(title === musicData[i].title){
-//         document.getElementById("SearchBar").innerHTML = hello
-//     }
-//   }
-
 
   

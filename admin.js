@@ -40,10 +40,6 @@ return isEmpty;
 // add Row
 function addHtmlTableRow()
 {
-// get the table by id
-// create a new row and cells
-// get value from input text
-// set the values into row cell's
 if(!checkEmptyInput()){
 let newRow = table.insertRow(table.length),
     cell1 = newRow.insertCell(0),
