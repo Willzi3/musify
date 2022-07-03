@@ -361,11 +361,10 @@ i:hover {
   .tab {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 11px;
   }
 
   #table td {
     width: 150px;
-    border: 1px solid black;
-    
+    border: 1px solid black:
   }
