@@ -1,5 +1,5 @@
 let data = JSON.parse(localStorage.getItem("Object"));
-// display from localStorage
+// display from localStorrage
 data.forEach(object => {
     document.getElementById("output4").innerHTML += `
         <table id="table">
@@ -18,20 +18,20 @@ table = document.getElementById("table");
 function checkEmptyInput()
 {
 let isEmpty = false,
-    fname = document.getElementById("fname").value,
-    lname = document.getElementById("lname").value,
-    age = document.getElementById("age").value;
+    title = document.getElementById("title").value,
+    artistName = document.getElementById("artistName").value,
+    rating = document.getElementById("rating").value;
 
-if(fname === ""){
+if(title === ""){
     alert("First Name Connot Be Empty");
     isEmpty = true;
 }
-else if(lname === ""){
+else if(artistName === ""){
     alert("Last Name Connot Be Empty");
     isEmpty = true;
 }
-else if(age === ""){
-    alert("Age Connot Be Empty");
+else if(rating === ""){
+    alert("rating Connot Be Empty");
     isEmpty = true;
 }
 return isEmpty;
@@ -49,13 +49,13 @@ let newRow = table.insertRow(table.length),
     cell1 = newRow.insertCell(0),
     cell2 = newRow.insertCell(1),
     cell3 = newRow.insertCell(2),
-    fname = document.getElementById("fname").value,
-    lname = document.getElementById("lname").value,
-    age = document.getElementById("age").value;
+    title = document.getElementById("title").value,
+    artistName = document.getElementById("artistName").value,
+    rating = document.getElementById("rating").value;
 
-cell1.innerHTML = fname;
-cell2.innerHTML = lname;
-cell3.innerHTML = age;
+cell1.innerHTML = title;
+cell2.innerHTML = artistName;
+cell3.innerHTML = rating;
 // call the function to set the event to the new row
 selectedRowToInput();
 }
@@ -71,9 +71,9 @@ for(let i = 1; i < table.rows.length; i++)
     {
       // get the seected row index
       rIndex = this.rowIndex;
-      document.getElementById("fname").value = this.cells[0].innerHTML;
-      document.getElementById("lname").value = this.cells[1].innerHTML;
-      document.getElementById("age").value = this.cells[2].innerHTML;
+      document.getElementById("title").value = this.cells[0].innerHTML;
+      document.getElementById("artistName").value = this.cells[1].innerHTML;
+      document.getElementById("rating").value = this.cells[2].innerHTML;
     };
 }
 }
@@ -81,13 +81,13 @@ selectedRowToInput();
 
 function editHtmlTbleSelectedRow()
 {
-let fname = document.getElementById("fname").value,
-    lname = document.getElementById("lname").value,
-    age = document.getElementById("age").value;
+let title = document.getElementById("title").value,
+    artistName = document.getElementById("artistName").value,
+    rating = document.getElementById("rating").value;
 if(!checkEmptyInput()){
-table.rows[rIndex].cells[0].innerHTML = fname;
-table.rows[rIndex].cells[1].innerHTML = lname;
-table.rows[rIndex].cells[2].innerHTML = age;
+table.rows[rIndex].cells[0].innerHTML = title;
+table.rows[rIndex].cells[1].innerHTML = artistName;
+table.rows[rIndex].cells[2].innerHTML = rating;
 }
 }
 
@@ -95,7 +95,7 @@ function removeSelectedRow()
 {
 table.deleteRow(rIndex);
 // clear input text
-document.getElementById("fname").value = "";
-document.getElementById("lname").value = "";
-document.getElementById("age").value = "";
+document.getElementById("title").value = "";
+document.getElementById("artistName").value = "";
+document.getElementById("rating").value = "";
 }
