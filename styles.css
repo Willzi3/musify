@@ -64,13 +64,13 @@ i:hover {
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 10px;
-    box-shadow: 5px 20px 60px 10px blueviolet;
+    /* box-shadow: 5px 20px 60px 10px blueviolet; */
     border-radius: 10px;
     border: none;
   }
   .popular:hover{
     /* background-color: blueviolet; */
-    box-shadow: 5px 20px 60px 10px red;
+    /* box-shadow: 5px 20px 60px 10px red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -212,7 +212,7 @@ i:hover {
   }
 
   #output4{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -319,19 +319,19 @@ i:hover {
     color: white;
   }
 
-  label{
+  /* label{
     font-weight: bold;
     color: blueviolet;
-  }
+  } */
 
-  .option {
+  /* .option {
     background-color: blueviolet;
     color: white;
   }
 
   .option:hover {
     background-color: black;
-  }
+  } */
 
   .artistInfo{
     border: 1px solid black;
@@ -352,9 +352,20 @@ i:hover {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    border: 10px solid blueviolet;
+    /* border: 10px solid blueviolet; */
   }
 
-  .img:hover {
+  /* .img:hover {
     background-color: red;
+  } */
+  .tab {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #table td {
+    width: 150px;
+    border: 1px solid black;
+    
   }

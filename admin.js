@@ -1,123 +1,101 @@
 let data = JSON.parse(localStorage.getItem("Object"));
-// console.log(data)
-// document.write(JSON.stringify(data))
-// data.sort(function (a, b){
-//     return a.rating - b.rating;
-// })
-console.log(data)
+// display from localStorage
 data.forEach(object => {
     document.getElementById("output4").innerHTML += `
-    <div id="list-container"><ul class="list"><li>${object.title}</li> <li>${object.artistName}</li> <li>${object.rating}</li><button id="edit">Edit</button><button id="Delete" onclick="deleteTask()" >Delete</button></ul></div>`
+        <table id="table">
+            <tr>
+                <td>${object.title}</td>
+                <td>${object.artistName}</td>
+                <td>${object.rating}</td>
+            </tr>
+        </table>`
 });
-// EveentListener for
-function myFunctions() {
-    let title = document.getElementById("search-bar").value;
-    let data = musicData.find( data => data.title === title);
-   document.getElementById("output2").innerHTML = `
-   <div class="output3"><h1>Result</h1>${data.title}- ${data.artistName} <li>${data.rating}</li></div>`
-       
-    }
 
-    // //sorting
-   
-    let sort = document.getElementById("output5").innerHTML = `
-    <label>Sort By:</label>
-    <select class="sort" id="sort" onchange="Func()">
-    <option value="ArtistName">ArtistName</option>
-    <option value="Catergory">Catergory</option>
-    <option value="Title">Title</option>
-    <option value"Rating">Rating</option>
-    <option value=""></option>
-    </select>`
+let rIndex,
+table = document.getElementById("table");
 
-    function Func() {
-        let Sort = document.getElementById("sort").value;
-        console.log(Sort);
+// check the empty input
+function checkEmptyInput()
+{
+let isEmpty = false,
+    fname = document.getElementById("fname").value,
+    lname = document.getElementById("lname").value,
+    age = document.getElementById("age").value;
 
-        data.sort()
-        if(Sort === data.title){
-            document.getElementById("output5").innerHTML += `
-            <div>${data[i].title}</div>`
-
-
-        }else if(Sort === data[i].artistName) {
-            document.getElementById("output5").innerHTML += `
-            <div>${data[i].artistName}</div>`
-        }else if(Sort === data[i].rating){
-            document.getElementById("output5").innerHTML += `
-            <div>${data[i].rating}</div>`
-        }else if(Sort === data[i].catergory) {
-            document.getElementById("output5").innerHTML += `
-            <div>${data[i].title}</div>`
-        } else {
-            document.getElementById("output5").innerHTML += `
-            <div>${data[i].id} ${data[i].title} ${data[i].artistName}</div>`
-        }
-    }
-
-    let addItem = document.getElementById("output6").innerHTML = `
-    <button type="button" id="BTN" onclick="addCourses()">Add Items</button>`
-    //Search specific item 
-    let searchItems = document.getElementById("search-bar").value;
-    for(i = 0; i < data.length; i++){
-        if(searchItems === data[i].artistName){
-            document.getElementById("output4").innerHTML += "hello  "      }
-    }
-
-    //add item
-
-    let courses = document.getElementById("output5").innerHTML = `
-    <div id="modal">
-    <input type="text" name="image" id="image" placeholder="image">
-    <input type="text" name="title" id="title" placeholder=title"">
-    <input type="text" name="catergory" id="catergory" placeholder="catergory">
-    <input type="text" name="artist-Name" id="artist-name" placeholder="artistName">
-    <input type="text" name="rating" id="rating" placeholder="rating">
-    </div>`
-function addCourses() {
-    const newCourse = {
-      image: document.querySelector("#image").value,
-      title: document.querySelector("#title").value,
-      type: document.querySelector("#catergory").value,
-      location: document.querySelector("#artist-name").value,
-      size: document.querySelector("#rating").value,
-      id: data.length + 1,
-    };
-    data.push(newCourse);
-    localStorage.setItem("Object", JSON.stringify(data));
-    showCourses.reload(data);
-  }
-
-  document.querySelector("#BTN").addEventListener("click", addCourses);
-
-  //delete item
-
-  function deleteTask(id) {
-    data = data.filter((track) => track.id !== id);
-    localStorage.setItem("Object", JSON.stringify(data));
-    showCourses(data);
-  }
-
-  let asc = true;
-const tracksContainer = document.querySelector("#output4");
-function showCourses(data) {
-  tracksContainer.innerHTML = "";
-  console.log("hello");
-  data.forEach((track) => {
-    tracksContainer.innerHTML += `
-      <tr>
-        <th scope="row">${track.id}</th>
-        <td>${track.image}</td>
-        <td>${track.title}</td>
-        <td>${track.catergory}</td>
-        <td>${track.artistName}</td>
-        <td>${track.rating}</td>
-        <td><i class="fa-solid fa-pen-to-square p-3"></i>
-        <i onclick="deleteTask(${track.id})" class="fa-solid fa-trash-can p-3"></i></td>
-      </tr>
-       `;
-  });
+if(fname === ""){
+    alert("First Name Connot Be Empty");
+    isEmpty = true;
 }
-  
-// console.log(data)
-// console.log(data)
+else if(lname === ""){
+    alert("Last Name Connot Be Empty");
+    isEmpty = true;
+}
+else if(age === ""){
+    alert("Age Connot Be Empty");
+    isEmpty = true;
+}
+return isEmpty;
+}
+
+// add Row
+function addHtmlTableRow()
+{
+// get the table by id
+// create a new row and cells
+// get value from input text
+// set the values into row cell's
+if(!checkEmptyInput()){
+let newRow = table.insertRow(table.length),
+    cell1 = newRow.insertCell(0),
+    cell2 = newRow.insertCell(1),
+    cell3 = newRow.insertCell(2),
+    fname = document.getElementById("fname").value,
+    lname = document.getElementById("lname").value,
+    age = document.getElementById("age").value;
+
+cell1.innerHTML = fname;
+cell2.innerHTML = lname;
+cell3.innerHTML = age;
+// call the function to set the event to the new row
+selectedRowToInput();
+}
+}
+
+// display selected row data into input text
+function selectedRowToInput()
+{
+
+for(let i = 1; i < table.rows.length; i++)
+{
+    table.rows[i].onclick = function()
+    {
+      // get the seected row index
+      rIndex = this.rowIndex;
+      document.getElementById("fname").value = this.cells[0].innerHTML;
+      document.getElementById("lname").value = this.cells[1].innerHTML;
+      document.getElementById("age").value = this.cells[2].innerHTML;
+    };
+}
+}
+selectedRowToInput();
+
+function editHtmlTbleSelectedRow()
+{
+let fname = document.getElementById("fname").value,
+    lname = document.getElementById("lname").value,
+    age = document.getElementById("age").value;
+if(!checkEmptyInput()){
+table.rows[rIndex].cells[0].innerHTML = fname;
+table.rows[rIndex].cells[1].innerHTML = lname;
+table.rows[rIndex].cells[2].innerHTML = age;
+}
+}
+
+function removeSelectedRow()
+{
+table.deleteRow(rIndex);
+// clear input text
+document.getElementById("fname").value = "";
+document.getElementById("lname").value = "";
+document.getElementById("age").value = "";
+}

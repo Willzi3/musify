@@ -170,16 +170,16 @@ const musicData = [
          
     },
 ]
-const userInfo = [
-    {
-        userName: "Zachary",
-        password: "L13@Nardo01"
-    },
-    {
-        userName: "Lecturer",
-        password: "LifeChoices!2022"
-    }
-]
+// const userInfo = [
+//     {
+//         userName: "Zachary",
+//         password: "L13@Nardo01"
+//     },
+//     {
+//         userName: "Lecturer",
+//         password: "LifeChoices!2022"
+//     }
+// ]
 //LocalStorage
 let myObject = JSON.stringify(musicData);
 
