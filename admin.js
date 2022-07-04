@@ -1,4 +1,12 @@
 let data = JSON.parse(localStorage.getItem("Object"));
+/*
+let data = JSON.parse(localStorage.getItem("Object")) ? 
+JSON.parse(localStorage.getItem("Object")) : [
+    {
+        id:1
+    }
+]
+*/
 // display from localStorrage
 data.forEach(object => {
     document.getElementById("output4").innerHTML += `
@@ -23,15 +31,15 @@ let isEmpty = false,
     rating = document.getElementById("rating").value;
 
 if(title === ""){
-    alert("First Name Connot Be Empty");
+    alert("Title Missing");
     isEmpty = true;
 }
 else if(artistName === ""){
-    alert("Last Name Connot Be Empty");
+    alert("artist Name Missing");
     isEmpty = true;
 }
 else if(rating === ""){
-    alert("rating Connot Be Empty");
+    alert("rating Missing");
     isEmpty = true;
 }
 return isEmpty;
@@ -52,9 +60,21 @@ let newRow = table.insertRow(table.length),
 cell1.innerHTML = title;
 cell2.innerHTML = artistName;
 cell3.innerHTML = rating;
+// 
+data.push( 
+    {
+        id: data.length + 1,
+        artistName: artistName,
+        title: title,
+        rating: rating,
+    });
+localStorage.setItem('Object',JSON.stringify(data));
+console.log(data);
+
 // call the function to set the event to the new row
 selectedRowToInput();
 }
+
 }
 
 // display selected row data into input text
@@ -85,6 +105,7 @@ table.rows[rIndex].cells[0].innerHTML = title;
 table.rows[rIndex].cells[1].innerHTML = artistName;
 table.rows[rIndex].cells[2].innerHTML = rating;
 }
+localStorage.setItem('Object',JSON.stringify(data))
 }
 
 function removeSelectedRow()
@@ -95,3 +116,4 @@ document.getElementById("title").value = "";
 document.getElementById("artistName").value = "";
 document.getElementById("rating").value = "";
 }
+localStorage.setItem('Object',JSON.stringify(data))

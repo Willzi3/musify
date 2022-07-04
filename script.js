@@ -211,7 +211,7 @@ function searchFunc(){
     let artistName = document.getElementById("searchBar").value;
     let data = musicData.find( data => data.artistName === artistName);
     document.getElementById("output").innerHTML = `
-    <div class="artistInfo">${data.artistName}<img class="img" src="${data.image}"><a href="${data.title}"link</a></div>`
+    <div class="artistInfo"><h1>${data.artistName}</h1><img class="img" src="${data.image}"><a href="${data.title}"link</a></div>`
 }
 //Search Bar
 
@@ -247,7 +247,11 @@ function catergory(){
         if(catergory === musicData[i].catergory){
             document.getElementById("output2").innerHTML += `
            <div class="cat-container">
-           <div class="catergory"><li>${musicData[i].title}</li><li>${musicData[i].artistName}</li><li>${musicData[i].rating}</li></div></div>`
+           <table class="table1"><tr><td>${musicData[i].title}</td>
+           </tr><tr><td>${musicData[i].artistName}</td></tr>
+           <tr><td>${musicData[i].rating}</td></tr>
+           </table>
+           </div>`
         }
     }
 }
