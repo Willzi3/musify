@@ -442,6 +442,8 @@ i:hover {
     border-radius: 5px;
     width: 150px;
     background-color: blueviolet;
+    display: flex;
+    justify-content: center;
   }
 
   .table1 td {
