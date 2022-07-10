@@ -4,3 +4,68 @@
     box-sizing: border-box;
     scroll-behavior:smooth;
 }
+/* Landing */
+#Landing{
+    height: 100vh;
+    border: 1px solid black;
+    background-color: lightslategray;
+    margin-bottom: 10px;
+}
+
+/* card */
+
+.card {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-shadow: 5px 5px 5px 5px lightslategray;
+    border: 1px solid black;
+
+}
+.card-container{
+    display: flex;
+}
+
+img {
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* Output Section*/
+
+#output {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+    border: 1px solid black;
+    z-index: 100;
+    background: white;
+    margin: 20px;
+}
+
+/* form */
+form{
+    border: 1px solid black;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 20%;
+    gap: 20px;
+    margin-bottom: -50px;
+}
+
+/* footer */
+
+footer{
+    width: 100%;
+    height: 40px;
+    background-color: lightslategray;
+}
