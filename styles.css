@@ -84,6 +84,15 @@ img {
 .search-container{
     padding: 20px;
     box-shadow: 5px 5px 5px 5px lightgray;
+    margin-top: -750px;
+}
+.searchy{
+    margin-top: -250px;
+    display: flex;
+    gap: 80px;
+    margin-bottom: 10px;
+    width: 400px;
+    border: 1px solid black;
 }
 
 /* form */
