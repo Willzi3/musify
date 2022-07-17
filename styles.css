@@ -71,6 +71,16 @@ img {
     background: white;
     margin-inline: 7%;
 }
+#output1{
+    
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    flex-direction: column;
+    border: 1px solid black;
+}
 .search-container{
     padding: 20px;
     box-shadow: 5px 5px 5px 5px lightgray;
