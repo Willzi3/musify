@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior:smooth;
+    
 }
 /* Landing */
 #Landing{
@@ -20,6 +20,11 @@
 }
 .landing-text h1 {
     font-size: 6rem;
+}
+.admin{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 /* card */
 
@@ -46,7 +51,6 @@ img {
 /* Output Section*/
 
 #output {
-    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -56,6 +60,20 @@ img {
     z-index: 100;
     background: white;
     margin: 20px;
+}
+#Output{
+    height: 100vh;
+    border-radius: 10px;
+    box-shadow: 15px 15px 10px 15px lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    margin-inline: 7%;
+}
+.search-container{
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px lightgray;
 }
 
 /* form */
@@ -80,4 +98,28 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* admin Page */
+
+.table {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+
+.table th {
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+}
+.table tr {
+    border: 1px solid black;
+    width: 150px;
+    text-align: center;
+}
+.table td {
+    border: 1px solid black;
+    width: 150px;
+   text-align: center;
 }
