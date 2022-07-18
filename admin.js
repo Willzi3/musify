@@ -131,13 +131,13 @@ localStorage.setItem("Object", JSON.stringify(properties));
 let search = document.getElementById("Output").innerHTML = `
 <div class="search-container">
 <input type="text" name="search" id="searchBar" placeholder="Search..."/>
-<button type="button" onclick="Search()">Search</button>
+<button type="button" onclick="Searchs()">Search</button>
 </div>
 `
 
 
 
-function Search() {
+function Searchs() {
     let search = document.getElementById("searchBar").value;
     for(i = 0; i < properties.length; i++){
         if(search === properties[i].catergory){
@@ -151,11 +151,12 @@ function Search() {
         } else if (search === properties[i].location){
             document.getElementById("output1").innerHTML += `
             <div class="searchy">
-            <div><img src="${properties[i].image}"/></div>
-            <div>${properties[i].price}</div>
-            <div>${properties[i].catergory}</div>
-            <div>${properties[i].location}</div>
+            <div class="search-item"><img src="${properties[i].image}"/></div>
+            <div class="search-item">${properties[i].price}</div>
+            <div class="search-item">${properties[i].catergory}</div>
+            <div class="search-item">${properties[i].location}</div>
             </div>`
         }
+       
     }
     }
