@@ -92,10 +92,10 @@ img {
     display: flex;
     gap: 80px;
     margin-bottom: 10px;
-    width: 400px;
-    border: 1px solid black;
-    
-    
+    width: 400px;    
+}
+.searchy:hover{
+    background: lightgray;
 }
 .searchy div {
     border: 1px solid black;
