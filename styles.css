@@ -85,6 +85,7 @@ img {
     padding: 20px;
     box-shadow: 5px 5px 5px 5px lightgray;
     margin-top: -650px;
+    margin-left: 800px;
 }
 .searchy{
     margin-top: -250px;
@@ -92,6 +93,10 @@ img {
     gap: 80px;
     margin-bottom: 10px;
     width: 400px;
+    
+    
+}
+.searchy div {
     border: 1px solid black;
 }
 .search-items{
