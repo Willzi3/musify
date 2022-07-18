@@ -4,150 +4,102 @@
     box-sizing: border-box;
     
 }
-/* Landing */
-#Landing{
-    background-image: url(./images/sean-pollock-PhYq704ffdA-unsplash.jpg);
-    background-size: cover;
+#Landing {
     height: 100vh;
-    border: 1px solid black;
-    margin-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./images/sean-pollock-PhYq704ffdA-unsplash.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 10px;
+
 }
-.landing-text{
+.Landing-text{
     color: white;
 }
-.landing-text h1 {
+.Landing-text h1 {
     font-size: 6rem;
+    text-shadow: 3px 3px black;
 }
-.admin{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-/* card */
-
-.card {
-    width: 200px;
-    height: 200px;
+#housecards{
+    width: 300px;
+    height: 400px;
+    box-shadow: 5px 5px 5px 5px lightgrey;
     border-radius: 10px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    box-shadow: 5px 5px 5px 5px lightslategray;
-    border: 1px solid black;
-
+    justify-content: center;
+    align-items: center;
 }
-.card-container{
-    display: flex;
+#housecards:hover{
+    background: lightslategray;
+    color: white;
+    box-shadow: 5px 5px 5px 5px lightgrey;
+}
+#housecards h3 {
+    text-align: center;
 }
 
-img {
-    height: 100px;
+#housecards img {
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    margin-bottom: 20px;
+}
+#housecards img:hover {
+    box-shadow: 5px 5px 5px 5px darkgray;
 }
 
-/* Output Section*/
+#house-values{
+display: flex;
+gap: 10px;
+list-style: none;
+}
 
-#output {
+#properties{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    border: 1px solid black;
-    z-index: 100;
-    background: white;
-    margin: 20px;
-}
-#Output{
-    height: 100vh;
-    border-radius: 10px;
-    box-shadow: 15px 15px 10px 15px lightgray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: white;
-    margin-inline: 7%;
-}
-#output1{
-    height: 50vh;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    z-index: 100;
-    flex-direction: column;
-    border: 1px solid black;
-}
-.search-container{
-    padding: 20px;
-    box-shadow: 5px 5px 5px 5px lightgray;
-    margin-top: -650px;
-    margin-left: 800px;
-}
-.searchy{
-    margin-top: -250px;
-    display: flex;
-    gap: 80px;
-    margin-bottom: 10px;
-    width: 500px;    
-}
-.searchy:hover{
-    background: lightgray;
-}
-.searchy div {
-    border: 1px solid black;
-}
-.search-items{
-    border: 1px solid black;
 }
 
-/* form */
-form {
-    border-radius: 10px;
-    padding: 50px;
+#form{
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-inline: 15%;
-    gap: 10px;
-    margin-bottom: -50px;
-    background: lightgray;
+    gap: 5px;
+    padding: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 5px 5px lightgray;
+    border-radius: 10px;
 }
 
-/* footer */
+.footer-text {
+   color: white;
+}
 
-footer{
-    width: 100%;
+footer {
+    background: lightslategray;
     height: 40px;
-    background-color: lightslategray;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
-/* admin Page */
-
-.table {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
+#displayListings{
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px 5px lightgray;
 }
 
-.table th {
-    border: 1px solid black;
-    width: 150px;
-    text-align: center;
+td img{
+    height: 100px;
 }
-.table tr {
-    border: 1px solid black;
-    width: 150px;
-    text-align: center;
-}
-.table td {
-    border: 1px solid black;
-    width: 150px;
-   text-align: center;
+
+#propertylist tr {
+    margin-bottom: 10px;
 }
