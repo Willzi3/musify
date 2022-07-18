@@ -131,32 +131,44 @@ localStorage.setItem("Object", JSON.stringify(properties));
 let search = document.getElementById("Output").innerHTML = `
 <div class="search-container">
 <input type="text" name="search" id="searchBar" placeholder="Search..."/>
-<button type="button" onclick="Searchs()">Search</button>
+<button type="button" onclick="Search()">Search</button>
 </div>
 `
 
 
 
-function Searchs() {
+function Search() {
     let search = document.getElementById("searchBar").value;
     for(i = 0; i < properties.length; i++){
         if(search === properties[i].catergory){
-            document.getElementById("output1").innerHTML += `
+            document.getElementById("Output").innerHTML += `
             <div class="searchy">
             <div><img src="${properties[i].image}"/></div>
             <div>${properties[i].price}</div>
             <div>${properties[i].catergory}</div>
             <div>${properties[i].location}</div>
             </div>`
-        } else if (search === properties[i].location){
-            document.getElementById("output1").innerHTML += `
+        } 
+        else if (search === properties[i].location){
+            document.getElementById("Output").innerHTML += `
             <div class="searchy">
             <div class="search-item"><img src="${properties[i].image}"/></div>
             <div class="search-item">${properties[i].price}</div>
             <div class="search-item">${properties[i].catergory}</div>
             <div class="search-item">${properties[i].location}</div>
+            <button type="button" onclick="delete()">delete</button>
+            <button type="button" onclick="edit()">edit</button>
             </div>`
         }
        
     }
     }
+
+    // delete function
+function deleteProperties(id) {
+    Properties = Properties.filter((property) => {
+      return property.id !== id;     //loop through houses and return houses which id noes not match
+    });   
+    localStorage.setItem("Object", JSON.stringify(Properties));
+    
+  }

@@ -72,7 +72,7 @@ img {
     margin-inline: 7%;
 }
 #output1{
-    
+    height: 50vh;
     display: flex;
     gap: 10px;
     align-items: center;
